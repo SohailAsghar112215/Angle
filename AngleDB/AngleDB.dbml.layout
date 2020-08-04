@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 27, 27.875" name="AngleDB">
+  <DataContextMoniker Name="/AngleDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6f4982bb-2a58-4458-9d5e-b5f1dd632b01" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/AngleDBDataContext/AceTblBanner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea56c6b7-f4e1-46b6-baaa-ca02721e7772" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf92a10d-8add-4a48-b3e0-ffd176fcd13a" absoluteBounds="6.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/AngleDBDataContext/TblUserSessionId" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ac760e1-0100-4bc1-a7e2-d86519b0e6d6" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02dbe439-d4c4-4dec-a2e7-b21914fe5b89" absoluteBounds="6.75, 6.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/AngleDBDataContext/AceTblCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b0b9865-38f6-49ae-af94-1cb2fb0f4ab7" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e0505dd-289b-4538-a848-335730e3b532" absoluteBounds="9.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AngleDBDataContext/AceTblNewsLetter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6da2b371-a063-4f2f-bdf6-a0256263a1e0" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29093f79-8fdd-4f38-b213-e91ef1c8afa0" absoluteBounds="9.75, 3.75, 2, 4.8477197265624987">
+      <DataClassMoniker Name="/AngleDBDataContext/AceTblProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0a86825-c799-4a0b-9713-0911b50b38c0" absoluteBounds="9.765, 4.21, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56518aa2-08de-43db-ab2b-c4a93411d9f7" absoluteBounds="9.75, 9.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AngleDBDataContext/AceTblProductFamily" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92c3e1b0-ce91-4e7d-aa07-1d6cd46a4e98" absoluteBounds="9.765, 10.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09aac344-40d8-4bd2-ba0a-b26815d9db8a" absoluteBounds="0.75, 10.75, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/AngleDBDataContext/BNCTblCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec35aa9e-2225-45b7-b5d8-3282fe1aae8e" absoluteBounds="0.765, 11.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1602b85e-3002-4b93-b262-e63e0f33b73b" absoluteBounds="3.75, 10.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/AngleDBDataContext/BNCTblProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a901266b-f14d-4d31-963a-4142492cde0d" absoluteBounds="3.765, 11.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b3a5047-b6b0-4d05-96a1-27f50834ef8b" absoluteBounds="12.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AngleDBDataContext/CustPromoHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="441148f5-d731-4697-aa6d-8e58076011b6" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02b4bd4f-2d7c-4934-8c32-7e542b7e1cd3" absoluteBounds="12.75, 3.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/AngleDBDataContext/DxTblCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0477ea27-e0f1-42de-8b5a-bd5ebbb75422" absoluteBounds="12.765, 4.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e92aecf-7cfa-4680-a6db-8e2c91b1e2ec" absoluteBounds="6.75, 12.75, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/AngleDBDataContext/DxTblProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0a41065-d972-46e4-8bff-cb10ea797628" absoluteBounds="6.765, 13.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c9a1ce8-91ba-43ea-bdd5-f2b6c6925b80" absoluteBounds="12.75, 7.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AngleDBDataContext/DxTblProductFamily" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7deb1ab0-95c0-4c0f-8fbe-fcc586d98821" absoluteBounds="12.765, 8.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e26f96d-514e-452f-a764-07a6a54f21b4" absoluteBounds="9.75, 12.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AngleDBDataContext/ShippingService" />
+      <nestedChildShapes>
+        <elementListCompartment Id="182b94ea-f98e-4e39-a1ec-d775ce6d93f5" absoluteBounds="9.765, 13.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f30db41-0055-42ff-a691-e795b24fe681" absoluteBounds="12.75, 10.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblAboutUs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b73466e-2a0e-460a-bbe7-ea110287792a" absoluteBounds="12.765, 11.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52168c66-e2fd-4ae2-94e3-b80c6ff37119" absoluteBounds="12.75, 14.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/AngleDBDataContext/TblAgent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a11aa8d-7308-4010-ac3c-cadba7509bf4" absoluteBounds="12.765, 15.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7f3e69b-8e86-45b8-9c50-2d40e68158bb" absoluteBounds="15.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/AngleDBDataContext/TblBlockCountry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7bac116-d1f0-4516-bb76-7bc63b037130" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="440ef22a-d2a0-44c1-af6e-19eec0f7e397" absoluteBounds="15.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/AngleDBDataContext/TblBlockWebsite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="565c14b0-33db-407b-8a27-a73a36baecc2" absoluteBounds="15.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8c528b6-c87e-48bc-9f44-9d3be2c1b174" absoluteBounds="15.75, 6.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblBox_Delivery" />
+      <nestedChildShapes>
+        <elementListCompartment Id="410591ec-346c-434c-b59b-3e8e6495a288" absoluteBounds="15.765, 7.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a2c2fe42-784e-4151-930a-0b40da9c66ed" absoluteBounds="15.75, 11.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblBox_Delivery_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9a06bd1-7f19-41b2-b838-f8a18f41d9e7" absoluteBounds="15.765, 12.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ce25f58-6276-4764-9594-ec33013d14c4" absoluteBounds="15.75, 14.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCancelled_Box" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1335cd62-e8f8-44cf-ac2e-bdfcfa1457cf" absoluteBounds="15.765, 15.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="23d65e5b-c568-4575-9cdc-0bc32fae4e7a" absoluteBounds="0.75, 16.75, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42ea0819-295b-4b72-8119-e4a1afd3f7d7" absoluteBounds="0.765, 17.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c32ac02f-a668-414e-895e-2bfb9675c90d" absoluteBounds="3.75, 17.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCashHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a84c5060-fdaf-4d4d-8bf5-9b63509d5879" absoluteBounds="3.765, 18.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b720b92-bd02-4e1e-abe4-b2dc227cc82c" absoluteBounds="6.75, 17.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10277fad-0606-4191-a4b4-e4c0e09fd5f2" absoluteBounds="6.765, 18.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29acb022-3481-449d-9b89-04fd46207afe" absoluteBounds="0.75, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCountry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a68330d9-0e30-402d-949b-c369cfc12cea" absoluteBounds="0.765, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01a6d425-f141-48c1-8866-26b29c7f6a35" absoluteBounds="9.75, 17.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AngleDBDataContext/tblcountrypostcode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5ea50e3-e57f-4340-a437-c5e66b39ff8f" absoluteBounds="9.765, 18.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d893fad-fbee-4a3d-b600-2e8e4c104735" absoluteBounds="12.75, 17.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCurrency" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a97c203-93d3-4bfa-bd34-58ae665bf7c9" absoluteBounds="12.765, 18.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfc0a5b9-1860-49ba-9f48-39acb01b671c" absoluteBounds="15.75, 17.75, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCustAddress" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f921834-f938-4794-967f-180dd01cc122" absoluteBounds="15.765, 18.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="334d3660-765e-4445-bfbe-ab3e3a229914" absoluteBounds="18.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/AngleDBDataContext/TblCustomer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6eacfba-6926-4299-bf90-c39742ad16cb" absoluteBounds="18.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db5444ae-b450-4c2c-b4d5-ad81d0a141e9" absoluteBounds="18.75, 4.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/AngleDBDataContext/TblDHLShipping" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c3439dd-a6bd-40a5-bec4-f1777c2debb7" absoluteBounds="18.765, 5.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3cd2824e-44ab-4803-b737-17fc6404e83c" absoluteBounds="18.75, 7.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblException" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ad7a41e-64e8-469b-994b-bfc77478c2ab" absoluteBounds="18.765, 8.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3ee5156-c2b1-484a-8a12-95c510e1a4a0" absoluteBounds="18.75, 12.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/AngleDBDataContext/TblExchangeRate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23b6ac2f-9f05-432d-bbf1-fc8a6070a0ee" absoluteBounds="18.765, 13.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70719362-ae9c-452b-a256-aadc2d5bc7cb" absoluteBounds="18.75, 15.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/AngleDBDataContext/TBLFAQ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f9dc755-82e1-423e-ba06-2d4307fb7188" absoluteBounds="18.765, 16.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c69285f4-0456-427b-94db-402b99e60f84" absoluteBounds="18.75, 18.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/AngleDBDataContext/TblFrontPageProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bc04c69-4d14-4822-8777-2db0c0b06a6d" absoluteBounds="18.765, 19.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a76e7475-f534-4ea8-9b0e-f880217e4994" absoluteBounds="6.75, 20.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/AngleDBDataContext/TblKSPay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a542449e-1db7-4ef2-b2b3-a2583a4b5de4" absoluteBounds="6.765, 21.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a06e55ed-eb3d-47ef-aeaf-683258c4542a" absoluteBounds="9.75, 20.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84d2ab88-b94f-4a75-b004-fb925737d86f" absoluteBounds="9.765, 21.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4790477-dc5f-43fa-a8f1-b8662cae842f" absoluteBounds="18.75, 20.75, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/AngleDBDataContext/TblMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5951218-9f80-490e-9092-25cf22beb8a1" absoluteBounds="18.765, 21.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="116fa02b-9de4-4c44-b40f-445c64027145" absoluteBounds="21.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblMoneyReceiver" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68eb918c-2575-4a1c-8a93-b888cf0d1fd1" absoluteBounds="21.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb48835d-88de-4e54-91d2-588eed0a8ae6" absoluteBounds="0.75, 21.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblPayPalEmail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="990502d8-848f-4ab2-bc16-08ee687b7bf9" absoluteBounds="0.765, 22.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e776a63-b7a9-43e7-997a-e3139075cf23" absoluteBounds="21.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/AngleDBDataContext/TblPicturesGallery" />
+      <nestedChildShapes>
+        <elementListCompartment Id="200b65e0-085e-4210-b4a7-d62825db51ae" absoluteBounds="21.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="393e02c2-7047-41d7-96a8-2bdecef982a2" absoluteBounds="21.75, 6.75, 2, 2.9247054036458318">
+      <DataClassMoniker Name="/AngleDBDataContext/TblProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3febc70a-7363-4a3c-9b9a-d8a71b38c677" absoluteBounds="21.765, 7.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3984a12-48a4-4d5c-a51a-c9b6b9821143" absoluteBounds="21.75, 10.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AngleDBDataContext/TblPromoCode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="865e53a0-e04a-4688-851a-1b2501d34a07" absoluteBounds="21.765, 11.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c7b0784-342c-4174-ba89-24b715540da9" absoluteBounds="21.75, 14.75, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/AngleDBDataContext/TblRND" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64d0c2c7-2caa-4663-a409-28058c4be323" absoluteBounds="21.765, 15.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7cae2121-6602-4416-a00f-a4cc83bf11be" absoluteBounds="0.75, 5, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/AngleDBDataContext/TblSaleOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8d80479-3ecb-4ea9-886c-0a6be7e9350c" absoluteBounds="0.765, 5.46, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06dd03f3-0d88-4ffb-90c8-09142953e3d8" absoluteBounds="3.5, 6.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/AngleDBDataContext/TblSaleOrder_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f34ff705-2f7e-4c43-84e5-3b923f72664a" absoluteBounds="3.515, 6.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="151cb1be-4033-4b92-9b4c-266162efb1a3" absoluteBounds="21.75, 18.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblSlider" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5bd5e36-cece-46fb-85e0-c33f27454a0e" absoluteBounds="21.765, 19.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58b25d2b-134d-4d66-a521-0d002acc45e3" absoluteBounds="3.25, 1.125, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/AngleDBDataContext/TblState" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a716d2b-14be-4239-b84f-1bb5dcf30d96" absoluteBounds="3.265, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b92b953e-51c9-4f1d-914f-83c06e83cf2b" absoluteBounds="21.75, 21.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/AngleDBDataContext/TblStock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41382c56-232e-4e85-88d1-394759e0ef73" absoluteBounds="21.765, 22.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="151a10a2-bb4c-42ed-ab09-6c7f39519807" absoluteBounds="12.75, 22.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AngleDBDataContext/TblStock_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15165f2e-492f-42a6-b928-45e693eed9dc" absoluteBounds="12.765, 23.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f832743-49f1-4b90-b565-5e9d5f143929" absoluteBounds="24.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/AngleDBDataContext/TblUnBlockIP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca82484b-8786-4ca5-aa56-4a6d2d982fe8" absoluteBounds="24.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bedee8a-694b-4920-bc4f-37dc946771f0" absoluteBounds="0.75, 24.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AngleDBDataContext/TblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb22d511-9be7-48ee-92c5-731b2d6f10b6" absoluteBounds="0.765, 25.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d065dc9-4b2c-4fb4-a620-118d3a731a45" absoluteBounds="24.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/AngleDBDataContext/TblYandex" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efaab1cd-2441-40d5-9a38-483a9e71c895" absoluteBounds="24.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 7.35659912109375); (3.5 : 7.35659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AngleDBDataContext/TblSaleOrder/TblSaleOrder_TblSaleOrder_Detail" />
+      <nodes>
+        <classShapeMoniker Id="7cae2121-6602-4416-a00f-a4cc83bf11be" />
+        <classShapeMoniker Id="06dd03f3-0d88-4ffb-90c8-09142953e3d8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.10659912109375); (3.25 : 2.10659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AngleDBDataContext/TblCountry/TblCountry_TblState" />
+      <nodes>
+        <classShapeMoniker Id="29acb022-3481-449d-9b89-04fd46207afe" />
+        <classShapeMoniker Id="58b25d2b-134d-4d66-a521-0d002acc45e3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,456 @@
+﻿@using AngleDB;
+@{
+    List<AceTblCategory> AceCategoriesList = new List<AceTblCategory>();
+    if (ViewBag.AceCatList != null)
+    {
+        AceCategoriesList = (List<AceTblCategory>)ViewBag.AceCatList;
+    }
+    List<DxTblCategory> DxCategoriesList = new List<DxTblCategory>();
+    if (ViewBag.DxCatList != null)
+    {
+        DxCategoriesList = (List<DxTblCategory>)ViewBag.DxCatList;
+    }
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-heading">
+    <div>
+        Form Elements
+        <small>Standard and custom elements for any form</small>
+    </div>
+</div>
+
+<div class="card card-default">
+    <div class="card-header">Form elements</div>
+    <div class="card-body">
+        <form class="form-horizontal" method="post" action="/POS/SaveProduct" enctype="multipart/form-data" id="SaveProductForm">
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Name<span style="color:red">*</span></label>
+                    <div class="col-md-8">
+                        <input class="form-control" type="text" placeholder="Name" name="ProName" required id="ProName" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Purchase Price<span style="color:red">*</span></label>
+                    <div class="col-md-8">
+                        <input class="form-control" type="text" placeholder="Purchase Price" name="ProSalePrice" required />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Is Active</label>
+                    <div class="col-md-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="IsActive" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Add Product On Dermics</label>
+                    <div class="col-md-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="DermicsCheckbox" type="checkbox" value="true" name="DermicsCheckbox" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">Dermics Category<span id="DermicsCat" class="DermicsHideRequiredElement">*</span></label>
+                    <div class="col-md-2 ">
+                        <!-- SELECT2-->
+                        <select class="form-control" id="DermicsCategory" name="DermicsCategory">
+                            <option value="0" selected>---Select Category---</option>
+
+                            @foreach (var cat in DxCategoriesList)
+                            {
+
+                                <option value="@cat.DxCatId">@cat.DxCatName</option>
+                            }
+
+                        </select>
+
+                    </div>
+                    <label class="col-md-2 col-form-label">Dermics Sale Price<span id="DermicsSP" class="DermicsHideRequiredElement">*</span></label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="DermicsSalePrice" placeholder="Sale Price" name="DermicsSalePrice" />
+                    </div>
+
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">Dermics Discounted Price</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="DermicsDiscountedPrice" placeholder="Discounted Price" name="DermicsDiscountedPrice" />
+                    </div>
+                    <label class="col-md-2 col-form-label">Dermics Family Name</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" placeholder="Family Name" id="DermicsFamilyName" name="DermicsFamilyName" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label offset-2">Long Description<span class="DermicsHideRequiredElement" id="DermicsLD">*</span></label>
+                    <div class="col-md-6">
+                        <div class="box box-info">
+
+                            <!-- /.box-header -->
+                            <div class="box-body pad">
+
+                                <textarea id="editor1" name="editor1" rows="10" cols="80" placeholder="Long Description here...">
+                                           
+                               </textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">Acecosm Short Description<span class="DermicsHideRequiredElement" id="DermicsSD">*</span></label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="DermicsShortDescription" name="DermicsShortDescription" placeholder="Short Description" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">Acecosm Youtube Link</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder="Youtube Link" id="DermicsYoutubeLink" name="DermicsYoutubeLink" />
+                    </div>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label offset-2">Is Active on Dermics</label>
+                    <div class="col-md-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="DermicsIsActive" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Add Product On Acecosm</label>
+                    <div class="col-md-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="AceCheckbox" type="checkbox" name="AceCheckbox"/>
+                            @*<label class="form-check-label" for="inlineCheckbox1">1</label>*@
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">Acecosm Category <span class="AcecosmHideRequiredElement" id="AcecosmCat">*</span></label>
+                    <div class="col-md-2 ">
+                        <!-- SELECT2-->
+                        <select class="form-control" id="AceCategory" name="AceCategory">
+                            <option value="0" selected>---Select Category---</option>
+                            @foreach (var cat in AceCategoriesList)
+                            {
+                                <option value="@cat.AceCatId">@cat.AceCatName</option>
+                            }
+                        </select>
+
+                    </div>
+                    <label class="col-md-2 col-form-label">Acecosm Sale Price <span class="AcecosmHideRequiredElement" id="AcecosmSP">*</span></label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="AceSalePrice" placeholder="Sale Price" name="AceSalePrice" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">Acecosm Discounted Price</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="AceDiscountedPrice" placeholder="Discounted Price" name="AceDiscountedPrice" />
+                    </div>
+                    <label class="col-md-2 col-form-label">Acecosm Family Name</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="AceFamilyName" placeholder="Ace Family Name" name="AceFamilyName" />
+                    </div>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label offset-2" id="AceShortDescription">Long Description<span class="AcecosmHideRequiredElement" id="AcecosmLD">*</span></label>
+                    <div class="col-md-6">
+                        <div class="box box-info">
+
+                            <!-- /.box-header -->
+                            <div class="box-body pad">
+
+                                <textarea id="editor2" name="editor2" rows="10" cols="80">
+                                           
+                               </textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2" id="AceShortDescription">Dermics Short Description<span class="AcecosmHideRequiredElement" id="AcecosmSD">*</span></label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="AceShortDescription" placeholder="Short Description" name="AceShortDescription" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2" id="AceShortDescription">Ace Youtube Link</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="AceYoutubeLink" placeholder="Youtube Link" name="AceYoutubeLink" />
+                    </div>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label offset-2">Is Active on AceCosm</label>
+                    <div class="col-md-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="AceIsActive" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Add Product On BNC</label>
+                    <div class="col-md-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="BNCCheckbox" type="checkbox" name="BNCCheckbox" />
+                            @*<label class="form-check-label" for="inlineCheckbox1">1</label>*@
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">BNC Category <span class="BNCHideRequiredElement" id="BNCCat">*</span></label>
+                    <div class="col-md-2 ">
+                        <!-- SELECT2-->
+                        <select class="form-control" id="BNCCategory" name="BNCCategory">
+                            <option value="0" selected>---Select Category---</option>
+                            @foreach (var cat in AceCategoriesList)
+                            {
+                                <option value="@cat.AceCatId">@cat.AceCatName</option>
+                            }
+                        </select>
+
+                    </div>
+                    <label class="col-md-2 col-form-label">BNC Sale Price <span class="BNCHideRequiredElement" id="BNCSP">*</span></label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="BNCSalePrice" placeholder="Sale Price" name="BNCSalePrice" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2">BNC Discounted Price</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="BNCDiscountedPrice" placeholder="Discounted Price" name="BNCDiscountedPrice" />
+                    </div>
+                    <label class="col-md-2 col-form-label">BNC Family Name</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" id="BNCFamilyName" placeholder="BNC Family Name" name="BNCFamilyName" />
+                    </div>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label offset-2">Long Description<span class="BNCHideRequiredElement" id="BNCLD">*</span></label>
+                    <div class="col-md-6">
+                        <div class="box box-info">
+
+                            <!-- /.box-header -->
+                            <div class="box-body pad">
+
+                                <textarea id="editor3" name="editor3" rows="10" cols="80">
+                                           
+                               </textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2" id="BNCShortDescription">BNC Short Description<span class="BNCHideRequiredElement" id="BNCSD">*</span></label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="BNCShortDescription" placeholder="Short Description" name="BNCShortDescription" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-2" id="BNCShortDescription">BNC Youtube Link</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="BNCYoutubeLink" placeholder="Youtube Link" name="BNCYoutubeLink" />
+                    </div>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label offset-2">Is Active on BNC</label>
+                    <div class="col-md-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="BNCIsActive" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label offset-8"></label>
+                    <div class="col-md-2">
+                        <button class="mb-1 btn btn-primary" type="submit">Save</button>
+                    </div>
+
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<!-- END card-->
+@section Styles {
+
+    <link href="@Styles.Url("~/Vendor/select2/dist/css/select2.css")" rel="stylesheet" />
+    <link href="@Styles.Url("~/Vendor/@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.css")" rel="stylesheet" />
+    <style>
+        .AcecosmHideRequiredElement, .DermicsHideRequiredElement, .BNCHideRequiredElement {
+            display: none;
+        }
+        .AcecosmAddRequiredElement, .DermicsAddRequiredElement, .BNCAddRequiredElement {
+            color: red;
+        }
+    </style>
+}
+@section Scripts {
+
+    <script src="@Scripts.Url("~/Vendor/select2/dist/js/select2.full.js")"></script>
+    <script src="~/Vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="@Scripts.Url("~/Vendor/jquery/dist/jQuery-2.2.0.min.js")"></script>
+    <script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+
+    <script>
+        $.noConflict();
+        $(function () {
+            CKEDITOR.replace('editor1');
+            CKEDITOR.replace('editor2');
+            CKEDITOR.replace('editor3');
+            $(".textarea").wysihtml5();
+        });
+        $(document).ready(function () {
+            $('#DermicsCheckbox').click(function ()
+            {
+                if ($('#DermicsCheckbox').is(":checked"))
+                {
+                    $('#DermicsCategory,#DermicsSalePrice,#Dermicseditor,#DermicsShortDescription').prop('required', true);
+                    $('#DermicsCat,#DermicsSP,#DermicsLD,#DermicsSD').removeClass("DermicsHideRequiredElement");
+                    $('#DermicsCat,#DermicsSP,#DermicsLD,#DermicsSD').addClass("DermicsAddRequiredElement");
+                    
+                }
+                else {
+                   
+                    $('#DermicsCategory,#DermicsSalePrice,#Dermicseditor,#DermicsShortDescription').prop('required', false);
+                    $('#DermicsCat,#DermicsSP,#DermicsLD,#DermicsSD').removeClass("DermicsAddRequiredElement");
+                    $('#DermicsCat,#DermicsSP,#DermicsLD,#DermicsSD').addClass("DermicsHideRequiredElement");
+                }
+
+            });
+            $('#AceCheckbox').click(function () {
+                if ($('#AceCheckbox').is(":checked")) {
+                    $('#AceCategory,#AceSalePrice,#Aceeditor,#AceShortDescription').prop('required', true);
+                    $('#AcecosmCat,#AcecosmSP,#AcecosmLD,#AcecosmSD').removeClass("AcecosmHideRequiredElement");
+                    $('#AcecosmCat,#AcecosmSP,#AcecosmLD,#AcecosmSD').addClass("AcecosmAddRequiredElement");
+
+                }
+                else {
+
+                    $('#AceCategory,#AceSalePrice,#Aceeditor,#AceShortDescription').prop('required', false);
+                    $('#AcecosmCat,#AcecosmSP,#AcecosmLD,#AcecosmSD').removeClass("AcecosmAddRequiredElement");
+                    $('#AcecosmCat,#AcecosmSP,#AcecosmLD,#AcecosmSD').addClass("AcecosmHideRequiredElement");
+                }
+
+            });
+
+            $('#BNCCheckbox').click(function () {
+                if ($('#BNCCheckbox').is(":checked")) {
+                    $('#BNCCategory,#BNCSalePrice,#BNCeditor,#BNCShortDescription').prop('required', true);
+                    $('#BNCCat,#BNCSP,#BNCLD,#BNCSD').removeClass("BNCHideRequiredElement");
+                    $('#BNCCat,#BNCSP,#BNCLD,#BNCSD').addClass("BNCAddRequiredElement");
+
+                }
+                else {
+
+                    $('#BNCCategory,#BNCSalePrice,#BNCeditor,#BNCShortDescription').prop('required', false);
+                    $('#BNCCat,#BNCSP,#BNCLD,#BNCSD').removeClass("BNCAddRequiredElement");
+                    $('#BNCCat,#BNCSP,#BNCLD,#BNCSD').addClass("BNCHideRequiredElement");
+                }
+
+            });
+            $("#SaveProductForm").submit(function ()
+            {
+                if ($('#DermicsCheckbox').is(":checked") == true) {
+                var Category = $('#DermicsCategory option:selected').val();
+                if (Category == "0") {
+                    $("#DermicsCategory").css({
+                        "border-color": "red",
+                        "border-width": "1px",
+                        "border-style": "solid"
+                    });
+                    $("#DermicsCategory").focus();
+                    return false;
+                    }
+
+                }
+                if ($('#AceCheckbox').is(":checked") == true) {
+                    var Category = $('#AceCategory option:selected').val();
+                    if (Category == "0") {
+                        $("#AceCategory").css({
+                            "border-color": "red",
+                            "border-width": "1px",
+                            "border-style": "solid"
+                        });
+                        $("#AceCategory").focus();
+                        return false;
+                    }
+
+                }
+            });
+            
+        });
+    </script>
+}
+
+
+
